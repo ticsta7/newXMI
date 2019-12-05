@@ -5,8 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>重构版本</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" >
+
 </head>
 <body>
-    
+       <!-- 顶部黑色导航栏 S -->
+       <div class="publicTop">
+        <div class="container">
+            <div class="pubTopLeft">
+                <a href="#">小米商城</a>
+                <span class="fenGe">丨</span>
+                <a href="#">MIUI</a>
+                <span class="fenGe">丨</span>
+                <a href="#">IoT</a>
+                <span class="fenGe">丨</span>
+                <a href="#">云服务</a>
+                <span class="fenGe">丨</span>
+                <a href="#">金融</a>
+                <span class="fenGe">丨</span>
+                <a href="#">有品</a>
+                <span class="fenGe">丨</span>
+                <a href="#">小爱开放平台</a>
+                <span class="fenGe">丨</span>
+                <a href="#">企业团购</a>
+                <span class="fenGe">丨</span>
+                <a href="#">资质证照</a>
+                <span class="fenGe">丨</span>
+                <a href="#">协议规则</a>
+                <span class="fenGe">丨</span>
+                <a href="#" class="download">下载app
+                    <div class="appQrcode">
+                        <div class="triangle-up"></div>
+                        <img src="./img/downloadApp.png " alt="小米商城" width="90" height="90">
+                        <span>小米商城APP</span> 
+                    </div>
+
+                </a>
+                <span class="fenGe">丨</span>
+                <a href="#">Select Location</a>
+
+
+            </div>
+            <div class="pubTopRight">
+
+                <div class="shopCar">
+                    <!-- class tit=title -->
+                    <a href="" class="tit">
+                            <span class="iconfont icon-gouwuche" ></span>
+                            购物车
+                            (<span>num</span>)
+                    </a>
+                    
+                    <div class="popHover">
+                             <!-- 购物车为空 -->
+                             <p class="noItem">购物车中还没有商品，赶紧选购吧!</p>
+                    
+                             <!-- 购物车有东西 -->
+                            <!-- <ul class="list"> 
+                                <li>
+                                    <a href="" class="pic"><img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1572941319.73568944.jpg?width=60&height=60" style="height: 60px;width: 60px; " alt=""></a>
+                                    <a href=""class='itemDes'>小米CC9 Pro 6GB+128GB 魔法绿境</a>
+                                    <div class="num">
+                                        <span >2799元 × 1</span>
+                                    <a href="" class="iconfont icon-cuowu" style="font-size: 1px; color: #b0b0b0;" ></a>
+                                    </div>
+                                     </li>
+                                     <li>
+                                            <a href="" class="pic"><img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1572941319.73568944.jpg?width=60&height=60" style="height: 60px;width: 60px; " alt=""></a>
+                                            <a href=""class='itemDes'>小米CC9 Pro 6GB+128GB 魔法绿境</a>
+                                            <div class="num">
+                                                <span >2799元 × 1</span>
+                                            <a href="" class="iconfont icon-cuowu" style="font-size: 1px; color: #b0b0b0;" ></a>
+                                            </div>
+                                             </li>
+                                <li>
+                                        <a href="" class="pic"><img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1572941319.73568944.jpg?width=60&height=60" style="height: 60px;width: 60px; " alt=""></a>
+                                        <a href=""class='itemDes'>小米CC9 Pro 6GB+128GB 魔法绿境</a>
+                                        <div class="num">
+                                            <span >2799元 × 1</span>
+                                        <a href="" class="iconfont icon-cuowu" style="font-size: 1px; color: #b0b0b0;" ></a>
+                                        </div>
+                                        </li>
+                                <li>
+                                        <a href="" class="pic"><img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1572941319.73568944.jpg?width=60&height=60" style="height: 60px;width: 60px; " alt=""></a>
+                                        <a href=""class='itemDes'>小米CC9 Pro 6GB+128GB 魔法绿境</a>
+                                        <div class="num">
+                                            <span >2799元 × 1</span>
+                                        <a href="" class="iconfont icon-cuowu" style="font-size: 1px; color: #b0b0b0;" ></a>
+                                        </div>
+                                        </li>
+                                <li>
+                                        <a href="" class="pic"><img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1572941319.73568944.jpg?width=60&height=60" style="height: 60px;width: 60px; " alt=""></a>
+                                        <a href=""class='itemDes'>小米CC9 Pro 6GB+128GB 魔法绿境</a>
+                                        <div class="num">
+                                            <span >2799元 × 1</span>
+                                        <a href="" class="iconfont icon-cuowu" style="font-size: 1px; color: #b0b0b0;" ></a>
+                                        </div>
+                                        </li>
+                                <li>
+                                        <a href="" class="pic"><img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1572941319.73568944.jpg?width=60&height=60" style="height: 60px;width: 60px; " alt=""></a>
+                                        <a href=""class='itemDes'>小米CC9 Pro 6GB+128GB 魔法绿境</a>
+                                        <div class="num">
+                                            <span >2799元 × 1</span>
+                                        <a href="" class="iconfont icon-cuowu" style="font-size: 1px; color: #b0b0b0;" ></a>
+                                        </div>
+                                        </li>
+                            
+                            </ul>
+                            <div class="total">
+                                <div class="price">
+                                    <p style="color: #bababa;">共6件商品</p>
+                                    <span style="color: #ff6700; font-weight: 400px; font-size: 24px;">7834元</span>
+                                </div>
+        
+                                <a href="" class="btn">去购物车结算</a>
+                            </div> -->
+                    </div>
+                </div>
+
+                <!-- 登录前的 -->
+                <!-- <div class="loginBefore">
+                    <a href="#">登录</a>
+                    <span class="fenGe">丨</span>
+                    <a href="#">注册</a>
+                    <span class="fenGe">丨</span> 
+                    <a href="#">消息通知</a>
+                </div> -->
+
+                <!-- 登录后的 -->
+                <div class="loginAfter">
+                    <div class="userInfo">
+                        <a href="" class="userId">userId </a>
+                        <ul>
+                            <li>个人中心</li>
+                            <li>评价晒单</li>
+                            <li>我的喜欢</li>
+                            <li>小米账户</li>
+                            <li>退出登录</li>
+                        </ul>
+                    </div>
+                    <span class="fenGe">丨</span>
+                    <a href="#">消息通知</a>
+                    <span class="fenGe">丨</span>
+                    <a href="#">我的订单</a>
+                </div>
+                 
+                
+            </div>  
+        </div>
+    </div>
+    <!-- 顶部黑色导航栏 E -->
 </body>
 </html>
